@@ -1,0 +1,42 @@
+// ----------
+// 覆盖UI组件库样式
+// ----------
+
+.menuItemHeight() {
+  height: @height-menu-item;
+  line-height: @height-menu-item;
+}
+
+.szxt-nav {
+  &.el-menu {
+    border-right: none;
+    background-color: @color-menu-bg;
+  }
+
+  .el-menu {
+    background-color: @color-menu-bg;
+  }
+
+  .el-submenu__title {
+    color: @color-normal;
+    background-color: @color-menu-bg-main;
+    .menuItemHeight();
+
+    &:focus, &:hover {
+      background-color: fade(@color-menu-bg-main, 90%);
+    }
+  }
+
+  .el-menu-item {
+    color: @color-menu-text;
+    .menuItemHeight();
+
+    &:focus, &:hover {
+      background-color: fade(@color-menu-bg, 90%);
+    }
+  }
+}
+
+.el-date-editor .el-range-separator{
+  width: 30px;
+}

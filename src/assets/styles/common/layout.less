@@ -1,0 +1,45 @@
+// ----------
+// 布局相关的样式
+// ----------
+
+.szxt-nav-wrapper {
+  width: @width-nav;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.szxt-nav {
+  overflow: auto;
+  height: calc(100% - @height-header);
+}
+
+.szxt-main-wrapper {
+  height: 100%;
+  padding-left: @width-nav;
+}
+
+.szxt-header-wrapper {
+  height: @height-header;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid @border-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: @padding-main-left;
+}
+
+.szxt-breadcrumb-wrapper {
+  height: @height-menu-item;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.szxt-main {
+  height: calc(100% - @height-header - @height-menu-item);
+  padding: 25px 140px 60px 100px;
+  overflow-y: auto;
+}

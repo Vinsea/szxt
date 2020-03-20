@@ -1,0 +1,74 @@
+// ----------
+// 全局样式
+// ----------
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #app {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: SourceHanSansSC-regular, Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, SimSun, sans-serif;
+  background: @color-body;
+}
+
+.clear::after {
+  clear: both;
+}
+
+.clear::after, .clear::before {
+  display: table;
+  content: "";
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#app {
+  position: relative;
+}
+
+.szxt-logo {
+  text-align: center;
+  background-color: @color-bg-logo;
+}
+
+.szxt-logo-text {
+  color: @color-normal;
+  font-size: 36px;
+  line-height: @height-header;
+}
+
+.szxt-tabs {
+  display: flex;
+}
+
+.szxt-tab-item {
+  color: #666;
+  font-size: 20px;
+  width: 100px;
+  line-height: @height-card-header;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color .3s, border-bottom-color .3s;
+
+  &.is-active {
+    color: @color-primary;
+    border-bottom-color: @color-primary;
+  }
+}
