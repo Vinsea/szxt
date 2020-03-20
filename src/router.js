@@ -18,7 +18,7 @@ Router.prototype.push = function (location) {
 };
 
 const router = new Router({
-  mode: 'history', // https://router.vuejs.org/zh/guide/essentials/history-mode.html
+  // mode: 'history', // https://router.vuejs.org/zh/guide/essentials/history-mode.html
   base: process.env.BASE_URL,
   routes: [
     {
